@@ -1,4 +1,4 @@
 package character;
 
-public class Enemy {
+public class Enemy extends Character {
 }
