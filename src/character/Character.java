@@ -4,11 +4,11 @@ public class Character {
 
     public String name;
     public String playerClass;
-    public int maxHp;
-    public int maxAtt;
-    public int minAtt;
+    public double maxHp;
+    public double maxAtt;
+    public double minAtt;
     public int level;
-    public int curHp;
+    public double curHp;
 
     public Character(String name, String playerClass) {
         this.name = name;
@@ -29,11 +29,11 @@ public class Character {
         }
     }
 
-    public int getCurHp(){
+    public double getCurHp(){
         return curHp;
     }
 
-    public void setCurHp(int hp){
+    public void setCurHp(double hp){
         if( hp >= maxHp - curHp){
             curHp = maxHp;
         }else{
@@ -58,7 +58,7 @@ public class Character {
         this.playerClass = playerClass;
     }
 
-    public int getMaxHp() {
+    public double getMaxHp() {
         return maxHp;
     }
 
